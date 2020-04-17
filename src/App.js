@@ -1,8 +1,14 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
 
-export default () => (
-  <>
-    <h1>Welcome to React Parcel Micro App!</h1>
-    <p>Hard to get more minimal than this React app.</p>
-  </>
+import Home from "./containers/Home/Home";
+
+const App = () => (
+    <div>
+        <Switch>
+            <Route path="/" component={Home} />
+        </Switch>
+    </div>
 );
+
+export default App;
